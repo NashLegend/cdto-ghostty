@@ -1,10 +1,11 @@
-## cd to... [![Latest Release](https://img.shields.io/github/release/jbtule/cdto.svg)](https://github.com/jbtule/cdto/releases/latest)
+## ghost-cd-to [![Latest Release](https://img.shields.io/github/release/jbtule/cdto.svg)](https://github.com/jbtule/cdto/releases/latest)
 <img src="https://raw.github.com/jbtule/cdto/master/graphics/lion.png" height="128px" width="128px" />
 
-Finder Toolbar app to open the current directory in the Terminal.
+Finder Toolbar app to open the current directory in [Ghostty](https://ghostty.org).
 
  * It's written in objective-c, and uses the scripting bridge so it's *fast*.
  * It's also shell agnostic. Works equally well when your shell is `bash` or `fish` or `zsh`.
+ * Reuses the existing Ghostty window — opens a new tab via AppleScript instead of spawning a new window.
 
 By Jay Tuley
 https://github.com/jbtule/cdto
@@ -14,25 +15,14 @@ https://github.com/jbtule/cdto
 Download [Latest cdto.zip](https://github.com/jbtule/cdto/releases/latest)
 
 
-To install "cd to ....app" copy to your Applications folder, and then from the applications folder ⌘ drag it into the Finder toolbar or drag from another finder window to toolbar being customized.
+To install "ghost-cd-to.app" copy to your Applications folder, and then from the applications folder ⌘ drag it into the Finder toolbar or drag from another finder window to toolbar being customized.
 
-To use, just click on the new button and instantly opens a new terminal window.
+To use, just click on the new button and it instantly opens a new Ghostty tab in the target directory.
 
-### Settings
+### Requirements
 
-To turn on feature that identifies automatically opened  Terminal windows, and closes them when using *cd to*.
-
-```bash
-defaults write name.tuley.jay.cd-to cdto-close-default-window -bool true
-```
-
-To change the window scheme for Terminal Windows from default.
-
-_Eg. if you wanted cd to windows to be "Red Sands"_
-
-```bash
-defaults write name.tuley.jay.cd-to cdto-new-window-setting -string "Red Sands"
-```
+ * [Ghostty](https://ghostty.org) terminal emulator
+ * macOS Accessibility permissions (for AppleScript keystroke automation when reusing an existing Ghostty window)
 
 
 
