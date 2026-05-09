@@ -254,7 +254,6 @@
 		699EB3CB234DBA0D00CC2315 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "cd to .../cd_to.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -269,14 +268,13 @@
 				);
 				MARKETING_VERSION = 3.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "name.tuley.jay.cd-to";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ghost-cd-to";
 			};
 			name = Debug;
 		};
 		699EB3CC234DBA0D00CC2315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "cd to .../cd_to.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +289,7 @@
 				);
 				MARKETING_VERSION = 3.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "name.tuley.jay.cd-to";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ghost-cd-to";
 			};
 			name = Release;
 		};
